@@ -1,9 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import AnimationTest from "./assets/components/AnimationTest";
 import HeroBlur from "./assets/components/HeroBlur";
 import Particles from "./assets/animations/Particles";
-import Squares from "./assets/animations/Squares";
 import Navbar from "./assets/components/Navbar";
 
 function App() {
