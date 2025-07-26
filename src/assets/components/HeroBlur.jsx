@@ -28,7 +28,7 @@ function HeroBlur({ topText, title, subtitle, bottomText }) {
                 text={title}
                 delay={320}
                 direction="bottom"
-                className="text-6xl flex justify-center text-center max-md:text-5xl"
+                className="text-6xl flex justify-center text-center max-md:text-5xl max-sm:text-4xl"
                 onAnimationComplete={() => setShowThird(true)}
               />
             )}
