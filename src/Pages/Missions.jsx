@@ -42,7 +42,7 @@ const items = [
 
 function Missions() {
   return (
-    <section className="flex flex-col gap-0">
+    <section className="flex flex-col gap-0 max-md:h-[90vh]">
       <div>
         <HeroBlur
           topText="Mission Phoenix."

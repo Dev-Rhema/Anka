@@ -1,45 +1,7 @@
 import React from "react";
 import HeroBlur from "../assets/components/HeroBlur";
-import SpotlightCard from "../assets/animations/SpotlightCard";
-import FadeUp from "../assets/animations/FadeUp";
 import GlowCard from "../assets/components/GlowCard";
 import Update from "../assets/components/Update";
-
-import Accordian, { AccordianItem } from "../assets/components/Accordion";
-import Card from "../assets/components/Card";
-
-const items = [
-  {
-    value: "item1",
-    trigger: "What is Mission Phoenix",
-    content:
-      "Mission Phoenix is Anka Space's first step in developing reusable rocket technology. It is a vertical takeoff and vertical landing (VTVL) rocket designed to reach 100 meters in altitude before landing precisely back on the launch pad. Future tests will push for higher altitudes, including main engine cutoff (MECO) and relight for controlled descent.",
-  },
-  {
-    value: "item2",
-    trigger: "Why is the mission important",
-    content:
-      "This mission serves as a crucial milestone in proving rapid reusability, which is essential for reducing spaceflight costs and increasing launch frequency. By successfully demonstrating controlled landing and reusability, we are laying the foundation for more advanced orbital and deep-space missions.",
-  },
-  {
-    value: "item3",
-    trigger: "How does the rocket land itself?",
-    content:
-      "The rocket utilizes a combination of thrust vector control, landing gear, and precision guidance systems to autonomously navigate back to its launch pad. Future missions will involve engine relight mid-air to refine the landing process.",
-  },
-  {
-    value: "item4",
-    trigger: "Who is working on Mission Phoenix?",
-    content:
-      "Anka Space has assembled a growing team of aerospace, mechanical, structural, and software engineers to design, build, and test the vehicle. We are currently expanding our core team and working with industry partners to bring this mission to reality.",
-  },
-  {
-    value: "item5",
-    trigger: "How can I get involved?",
-    content:
-      "We are actively hiring engineers and specialists to join our mission. If you're interested in contributing, check out our Careers page for open positions or reach out via our Contact Us section.",
-  },
-];
 
 const ABOUT = [
   {
@@ -62,7 +24,7 @@ const ABOUT = [
 
 function About() {
   return (
-    <section className="flex flex-col gap-10">
+    <section className="flex flex-col gap-10 max-md:h-[90vh]">
       <HeroBlur
         topText="ABOUT ANKA SPACE."
         title="M. Kemal Atatürk"
