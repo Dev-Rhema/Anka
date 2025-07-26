@@ -15,22 +15,22 @@ function MobileNav({ className, onClose }) {
 
   return (
     <div
-      className={`fixed top-0 left-0 h-screen w-screen bg-black text-white z-[1000] p-6 overflow-hidden ${className} flex flex-col gap-10 geist-font`}
+      className={`fixed top-0 left-0 h-screen w-screen bg-black text-white z-[1000]  overflow-hidden ${className} flex flex-col gap-10 geist-font`}
     >
-      <div className="w-full flex items-center justify-center relative">
+      <div className="w-full flex items-center justify-center relative border-b border-white/30 py-6">
         <div className="flex items-center justify-center w-1/3 max-lg:w-full">
           <img src={logo} className="w-[200px] h-full" alt="" />
         </div>
         <button
           className="text-3xl absolute 
-       flex justify-end cursor-pointer w-full items-center"
+       flex justify-end cursor-pointer w-full items-center px-4"
           onClick={onClose}
         >
           <IoClose className="hover:scale-120 transition" />
         </button>
       </div>
 
-      <div className="flex flex-col  h-full text-3xl gap-10 pl-10 pt-10">
+      <div className="flex flex-col p-6  h-full text-3xl gap-10 pl-10 pt-10">
         <NavLink to={`/`} onClick={onClose}>
           <DecryptedText text="Home" animateOn="hover" />
         </NavLink>

@@ -24,7 +24,7 @@ function Footer() {
             </p>
             <img
               src={ankaSpace}
-              className="w-[256px] opacity-20 img-filter hover:opacity-30"
+              className="w-[256px] opacity-20 img-filter hover:opacity-30 max-md:w-[200px]"
               alt=""
             />
           </div>

@@ -7,13 +7,13 @@ import Footer from "./assets/components/Footer";
 function MainLayout() {
   return (
     <>
-      <div className="relative bg-[#030014]">
+      <div className="relative bg-[#030014] ">
         <Particles className="absolute w-full h-full z-0 pointer-events-none" />
         <Navbar />
         <main className="min-h-screen z-50 bg-[#030014]">
           <Outlet />
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

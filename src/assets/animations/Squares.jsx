@@ -3,8 +3,8 @@ import { useRef, useEffect, Children } from "react";
 const Squares = ({
   direction = "down",
   speed = 0,
-  borderColor = "rgba(16,8,28, 1)",
-  squareSize = 100,
+  borderColor = "rgba(16,16,28, 1)",
+  squareSize = 70,
   hoverFillColor = "rgba(0,0,0,0)",
   Children,
 }) => {

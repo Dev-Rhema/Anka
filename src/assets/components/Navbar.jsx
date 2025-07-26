@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <>
       {mobNav && <MobileNav onClose={() => setMobNav(false)} />}
-      <nav className="flex px-10 py-5 justify-between fixed top-0 left-0 w-full bg-black z-[100] geist-font items-center text-lg border-b border-white/10 max-2xl:text-sm max-lg:px-6">
+      <nav className="flex px-10 py-5 justify-between fixed top-0 left-0 w-full bg-black z-[100] geist-font items-center text-lg border-b border-white/10 max-2xl:text-sm max-lg:px-6 max-md:p-4">
         <div className="flex items-center justify-start gap-10 w-1/3 max-lg:hidden">
           <NavLink to={`/`}>
             <DecryptedText text="Home" />

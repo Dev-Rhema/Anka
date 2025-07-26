@@ -4,7 +4,7 @@ import DecryptedText from "../animations/DecryptedText";
 const Button = ({ className, text }) => {
   return (
     <button
-      className={` geist-font px-6 py-4 cursor-pointer rounded-sm ${className} max-md:px-2 max-md:py-2`}
+      className={` geist-font px-4 py-4 cursor-pointer rounded-sm ${className} max-md:px-2 max-md:py-2`}
     >
       <DecryptedText
         text={text}
