@@ -77,27 +77,6 @@ function About() {
       <div className="m-auto max-2xl:px-10 max-md:px-6">
         <Update />
       </div>
-      <Accordian>
-        {items.map((item, index) => (
-          <FadeUp
-            className="cursor-pointer"
-            Children={
-              <Card
-                className="mb-6 geist-font"
-                content={
-                  <AccordianItem
-                    key={item.value} // Ensure 'value' is unique
-                    value={item.value}
-                    trigger={item.trigger}
-                  >
-                    <p>{item.content}</p>
-                  </AccordianItem>
-                }
-              />
-            }
-          />
-        ))}
-      </Accordian>
     </section>
   );
 }
