@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+body {
+  background-color: #030014;
+  color: white;
+  font-family: "inter", sans-serif;
+}
+
+@font-face {
+  font-family: "GeistMono";
+  src: url(./assets/fonts/GeistMono-Regular.ttf);
+}
+@font-face {
+  font-family: "InterMono";
+  src: url(./assets/fonts/IntelOneMono-Regular.ttf);
+}
+@font-face {
+  font-family: "inter";
+  src: url(./assets/fonts/Inter_28pt-Regular.ttf);
+}
+
+.geist-font {
+  font-family: "GeistMono", sans-serif;
+}
+.inter-mono-font {
+  font-family: "GeistMono", sans-serif;
+}
+
+.img-filter {
+  filter: brightness(0) invert(1);
+}
