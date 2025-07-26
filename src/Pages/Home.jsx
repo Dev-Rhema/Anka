@@ -46,7 +46,7 @@ const WWD = [
 
 function Home() {
   return (
-    <section className="relative flex flex-col gap-6 w-[80%] m-auto max-2xl:w-[100%] max-2xl:px-10 max-md:px-6">
+    <section className="relative flex flex-col gap-6 w-[80%] m-auto max-2xl:w-[100%]">
       <div className="h-screen flex items-center relative w-full max-md:h-[100vh]">
         <Particles className="absolute top-0 left-0 w-full" />
         <div className="absolute flex items-center inset-x-0 justify-center overflow-hidden">
@@ -57,7 +57,7 @@ function Home() {
           />
         </div>
         <FadeUp
-          className="z-50"
+          className="z-50 max-2xl:px-10 max-md:px-6"
           Children={
             <div className="flex flex-col justify-center items-center gap-6">
               <h1 className="text-7xl font-extrabold w-[80%] text-center max-lg:w-full max-md:text-4xl max-sm:text-3xl">
@@ -82,7 +82,7 @@ function Home() {
       </div>
       <div>
         <FadeUp
-          className="mt-50 max-md:mt-10 text-center"
+          className="mt-50 max-md:mt-10 text-center max-2xl:px-10 max-md:px-6"
           Children={
             <div className="flex w-full flex-col items-center justify-center  bg-[#030014] overflow-hidden">
               <div className=" flex items-center">
@@ -107,7 +107,7 @@ function Home() {
         />
       </div>
       <FadeX
-        className="min-h-screen max-2xl:text-[16px] max-md:text-sm max-sm:text-[12px]"
+        className="min-h-screen max-2xl:text-[16px] max-md:text-sm max-sm:text-[12px] max-2xl:px-10 max-md:px-6"
         ChildA={
           <div className="h-full grid grid-rows-2 gap-6 max-2xl:gap-4">
             <Card
@@ -216,7 +216,7 @@ function Home() {
         }
       />
       {/* HARVARD ADVANTAGE */}
-      <div className="flex flex-col w-full min-h-screen items-center justify-center mt-30 text-[18px]  max-2xl:text-sm">
+      <div className="flex flex-col w-full min-h-screen items-center justify-center mt-30 text-[18px]  max-2xl:text-sm max-2xl:px-10 max-md:px-6">
         <div className="h-full">
           <img src={havardDec} className="w-xl h-full" alt="" />
         </div>
@@ -280,7 +280,7 @@ function Home() {
         />
 
         <FadeUp
-          className="mt-[-30%] max-lg:mt-[-45%] max-md:mt-[-65%] max-sm:mt-[-80%]"
+          className="mt-[-30%] max-lg:mt-[-45%] max-md:mt-[-65%] max-sm:mt-[-80%] max-2xl:px-10 max-md:px-6"
           Children={
             <div className="flex flex-col gap-14 items-center justify-center py-6 max-md:gap-10">
               <h1 className="text-5xl font-bold max-lg:text-4xl max-sm:text-3xl">
@@ -343,20 +343,17 @@ function Home() {
         />
       </div>
       {/* WHY THIS MATTERS */}
-      <div className="w-[80%] m-auto py-20 max-2xl:w-full overflow-hidden">
+      <div className="w-[80%] m-auto py-20 max-2xl:w-full overflow-hidden ">
         <FadeUp
           Children={
-            <div className="w-full flex items-center justify-center">
-              <img
-                src={wtm}
-                className="w-full object-cover max-lg:min-w-[500px] max-md:min-w-[400px]"
-              />
+            <div className="w-full flex items-center justify-centermax-2xl:px-10 max-md:px-6">
+              <img src={havardDec} className="w-xl h-full" />
             </div>
           }
         />
 
         <FadeUp
-          className="mt-[-20%]"
+          className="mt-[-40%] max-2xl:px-10 max-md:px-6"
           Children={
             <div className="flex flex-col gap-12 items-center justify-center py-12 max-md:py-4 max-md:gap-8">
               <h1 className="text-5xl font-bold max-md:text-4xl max-sm:text-3xl">
@@ -417,7 +414,9 @@ function Home() {
           }
         />
       </div>
-      <Update />
+      <div className="max-2xl:px-10 max-md:px-6">
+        <Update />
+      </div>
     </section>
   );
 }
