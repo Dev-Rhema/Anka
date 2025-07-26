@@ -13,7 +13,7 @@ function MainLayout() {
         <main className="min-h-screen z-50 bg-[#030014]">
           <Outlet />
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );
