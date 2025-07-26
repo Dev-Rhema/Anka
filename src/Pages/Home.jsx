@@ -17,6 +17,7 @@ import { CiCircleCheck } from "react-icons/ci";
 import { HiOutlineLightningBolt } from "react-icons/hi";
 import { FaGroupArrowsRotate } from "react-icons/fa6";
 import StarBorder from "../assets/animations/StarBorder";
+import Particles from "../assets/animations/Particles";
 
 const WWD = [
   {
@@ -45,7 +46,8 @@ const WWD = [
 function Home() {
   return (
     <section className="relative flex flex-col gap-6 w-[80%] m-auto max-2xl:w-[100%] max-2xl:px-10 max-md:px-6">
-      <div className="h-screen flex items-center w-full max-md:h-[100vh]">
+      <div className="h-screen flex items-center relative w-full max-md:h-[100vh]">
+        <Particles className="absolute top-0 left-0 w-full" />
         <div className="absolute flex items-center inset-x-0 justify-center overflow-hidden">
           <img
             src={radar}

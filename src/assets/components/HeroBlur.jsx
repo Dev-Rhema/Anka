@@ -35,7 +35,7 @@ function HeroBlur() {
               text="Hello How are you doing Subtitle"
               delay={320}
               direction="bottom"
-              className="border-b shadow-2xl border-white/50 text-4xl h-[10%]"
+              className="shadow-2xl border-white/50 text-4xl h-[10%]"
               onAnimationComplete={() => setShowFourth(true)}
             />
           )}
