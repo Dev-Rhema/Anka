@@ -16,28 +16,28 @@ function HeroBlur({ topText, title, subtitle, bottomText }) {
           <div className="h-[10%] flex justify-center items-center">
             <BlurText
               text={topText}
-              delay={320}
+              delay={360}
               direction="bottom"
-              className="text-[16px] max-md:text-[14px] inter-mono-font"
+              className="text-[16px] max-md:text-[14px] inter-mono-font delay-300"
               onAnimationComplete={() => setShowSecond(true)}
             />
           </div>
-          <div className="h-[80%]  flex gap-10 justify-center flex-col text-center items-center">
+          <div className="h-[80%]  flex gap-10 justify-center flex-col text-center items-center w-full font-semibold">
             {showSecond && (
               <BlurText
                 text={title}
-                delay={320}
+                delay={360}
                 direction="bottom"
-                className="text-6xl flex justify-center text-center max-md:text-5xl max-sm:text-4xl"
+                className="text-6xl flex justify-center text-center max-md:text-5xl max-sm:text-4xl delay-300"
                 onAnimationComplete={() => setShowThird(true)}
               />
             )}
             {showThird && (
               <BlurText
                 text={subtitle}
-                delay={320}
+                delay={360}
                 direction="bottom"
-                className="shadow-2xl flex justify-center text-center text-4xl max-md:text-3xl max-sm:text-2xl h-[10%]"
+                className="shadow-2xl flex justify-center text-center text-4xl max-md:text-3xl max-sm:text-2xl h-[10%] w-[50%] max-lg:w-full delay-300 font-medium"
                 onAnimationComplete={() => setShowFourth(true)}
               />
             )}
@@ -46,7 +46,7 @@ function HeroBlur({ topText, title, subtitle, bottomText }) {
             {showFourth && (
               <BlurText
                 text={bottomText}
-                delay={320}
+                delay={360}
                 className="text-[16px] inter-mono-font max-md:text-[14px]"
                 direction="bottom"
               />
