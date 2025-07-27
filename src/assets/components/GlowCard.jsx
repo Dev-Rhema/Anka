@@ -10,7 +10,7 @@ function GlowCard({ title, text, color, children, className }) {
       whileInView={{ opacity: 1, translateY: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 1 }}
-      className={`relative w-full flex flex-col gap-2 bg-white/5 rounded-2xl shadow-md backdrop-blur-sm border hover:transition-all hover:duration-500 border-white/10 p-6 hover:bg-white/10 hover:border-${color} hover:shadow-2xl hover:shadow-purple-400/10 hover:translate-y-[-2px] text-center max-md:p-4 max-md:text-[12px] ${className}`}
+      className={`relative w-full flex flex-col gap-2 bg-white/5 rounded-2xl shadow-md backdrop-blur-sm border hover:transition-all hover:duration-500 border-white/10 p-6 hover:bg-white/10 hover:border-${color} hover:shadow-2xl hover:shadow-purple-400/10 hover:translate-y-[-2px] text-center max-md:p-4 max-md:text-[12px] ${className} max-md:border-[${color}]`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
