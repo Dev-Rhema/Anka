@@ -1,5 +1,7 @@
 import React from "react";
 import HeroBlur from "../assets/components/HeroBlur";
+import SpotlightCard from "../assets/animations/SpotlightCard";
+import FadeUp from "../assets/animations/FadeUp";
 import GlowCard from "../assets/components/GlowCard";
 import Update from "../assets/components/Update";
 
@@ -24,7 +26,7 @@ const ABOUT = [
 
 function About() {
   return (
-    <section className="flex flex-col gap-10 max-md:h-[80vh]">
+    <section className="flex flex-col gap-10">
       <HeroBlur
         topText="ABOUT ANKA SPACE."
         title="M. Kemal Atatürk"

@@ -1,7 +1,4 @@
 import React from "react";
-import HeroBlur from "../assets/components/HeroBlur";
-import GlowCard from "../assets/components/GlowCard";
-import Update from "../assets/components/Update";
 import FadeUp from "../assets/animations/FadeUp";
 import Particles from "../assets/animations/Particles";
 import Button from "../assets/components/Button";
