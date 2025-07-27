@@ -21,7 +21,7 @@ function GlowCard({ title, text, color, children, className }) {
         hover:bg-white/10 hover:shadow-2xl hover:shadow-purple-400/10 hover:translate-y-[-2px] text-center 
         max-md:border-[var(--border-color)] 
         max-md:p-4 max-md:text-[12px] ${className} 
-        transition-all duration-500`}
+        `}
     >
       <span className="absolute top-0 left-0 m-6 bg-gradient-to-l from-gray-600 to-pink-400 w-6 h-6 rounded-full opacity-10"></span>
       <h1 className="text-[30px] max-md:text-[24px] font-semibold">{title}</h1>
