@@ -10,7 +10,7 @@ function HeroBlur({ topText, title, subtitle, bottomText }) {
 
   return (
     <>
-      <SpotlightCard className="h-screen ">
+      <SpotlightCard className="h-[90vh]">
         <Squares />
         <div className="absolute top-0 left-0 flex flex-col items-center pt-30 justify-center w-full h-full overflow-hidden max-md:px-6 text-center max-sm:px-4">
           <div className="h-[10%] flex justify-center items-center">

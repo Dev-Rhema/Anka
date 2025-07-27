@@ -8,7 +8,7 @@ function Contact() {
     <section className="flex flex-col gap-10 max-md:h-[80vh]">
       <div className="h-screen flex items-center relative w-full max-md:h-[100vh]">
         <Particles className="absolute top-0 left-0 w-full" />
-        <h1>COntac</h1>
+        <h1>Contact</h1>
       </div>
       <FadeUp
         className="z-50 max-2xl:px-10 max-md:px-6"
