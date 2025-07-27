@@ -32,22 +32,22 @@ function MobileNav({ className, onClose }) {
 
       <div className="flex flex-col p-6  h-full text-3xl gap-10 pl-10 pt-10">
         <NavLink to={`/`} onClick={onClose}>
-          <DecryptedText text="Home" animateOn="hover" />
+          <DecryptedText text="Home" animateOn="view" />
         </NavLink>
         <NavLink to={"/about-us"} onClick={onClose}>
-          <DecryptedText text="About Us" animateOn="hover" />
+          <DecryptedText text="About Us" animateOn="view" />
         </NavLink>
         <NavLink to={"/mission-phoenix"} onClick={onClose}>
-          <DecryptedText text="Mission Phoenix" animateOn="hover" />
+          <DecryptedText text="Mission Phoenix" animateOn="view" />
         </NavLink>
         <NavLink to={"/shop"} onClick={onClose}>
           <DecryptedText text="Shop" />
         </NavLink>
         <NavLink to={"/careers"} onClick={onClose}>
-          <DecryptedText text="Careers" animateOn="hover" />
+          <DecryptedText text="Careers" animateOn="view" />
         </NavLink>
         <NavLink to={"/contact-us"} onClick={onClose}>
-          <DecryptedText text="Contact Us" animateOn="hover" />
+          <DecryptedText text="Contact Us" animateOn="view" />
         </NavLink>
       </div>
     </div>
