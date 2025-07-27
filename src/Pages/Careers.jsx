@@ -149,7 +149,7 @@ function Career() {
                   <FadeUp
                     Children={
                       <GlowCard
-                        color={position.firstColor}
+                        color={position.secondColor}
                         children={
                           <div className="text-start text-sm flex gap-6 flex-col p-4 max-md:p-2 max-md:gap-4">
                             <h1 className="text-3xl font-semibold">
