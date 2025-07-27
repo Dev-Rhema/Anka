@@ -3,10 +3,12 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./assets/components/Navbar";
 import Particles from "./assets/animations/Particles";
 import Footer from "./assets/components/Footer";
+import ScrollToTop from "./assets/components/ScrollToTheTop";
 
 function MainLayout() {
   return (
     <>
+      {/* <ScrollToTop /> */}
       <div className="relative bg-[#030014] ">
         <Particles className="absolute w-full h-full z-0 pointer-events-none" />
         <Navbar />

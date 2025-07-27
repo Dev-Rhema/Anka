@@ -123,7 +123,7 @@ function Career() {
                   </h1>
                 }
               />
-              <div className="grid grid-cols-3 gap-6 my-10 max-lg:grid-cols-1 mb-30">
+              <div className="grid grid-cols-3 gap-2 my-10 max-lg:grid-cols-1 mb-30">
                 {CAREERS.map((career) => (
                   <FadeUp
                     Children={
@@ -144,14 +144,14 @@ function Career() {
                   </h1>
                 }
               />
-              <div className="grid gap-6 my-10 grid-cols-1 w-[70%] max-lg:w-full m-auto mb-30">
+              <div className="grid gap-6 my-10 grid-cols-1 w-[70%] max-lg:w-full m-auto max-lg:m-0 mb-30">
                 {POSITIONS.map((position) => (
                   <FadeUp
                     Children={
                       <GlowCard
                         color={position.secondColor}
                         children={
-                          <div className="text-start text-sm flex gap-6 flex-col p-4 max-md:p-2 max-md:gap-4">
+                          <div className="text-start text-sm flex gap-6 h-full flex-col p-4 max-md:p-2 max-md:gap-4">
                             <h1 className="text-3xl font-semibold">
                               {position.position}
                             </h1>
