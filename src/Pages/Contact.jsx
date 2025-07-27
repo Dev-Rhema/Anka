@@ -20,8 +20,8 @@ function Contact() {
               />
 
               <div className="absolute inset-0 flex items-center justify-center z-10">
-                <h1 className="text-6xl font-bold inter-mono-font text-center">
-                  <BlurText text="Contact Us" />
+                <h1 className="text-6xl inter-mono-font text-center">
+                  <BlurText text="Contact Us" className="text-6xl font-black" />
                 </h1>
               </div>
             </div>
