@@ -4,6 +4,7 @@ import Particles from "../assets/animations/Particles";
 import Button from "../assets/components/Button";
 import SpotlightCard from "../assets/animations/SpotlightCard";
 import Card from "../assets/components/Card";
+import BlurText from "../assets/animations/BlurText";
 
 function Contact() {
   return (
@@ -20,7 +21,7 @@ function Contact() {
 
               <div className="absolute inset-0 flex items-center justify-center z-10">
                 <h1 className="text-6xl font-bold inter-mono-font text-center">
-                  Contact Us
+                  <BlurText text="Contact Us" />
                 </h1>
               </div>
             </div>
