@@ -24,7 +24,7 @@ const ABOUT = [
 
 function About() {
   return (
-    <section className="flex flex-col gap-10 max-md:h-[90vh]">
+    <section className="flex flex-col gap-10 max-md:h-[80vh]">
       <HeroBlur
         topText="ABOUT ANKA SPACE."
         title="M. Kemal Atatürk"
