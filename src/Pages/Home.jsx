@@ -346,14 +346,14 @@ function Home() {
       <div className="w-[80%] m-auto py-20 max-2xl:w-full overflow-hidden ">
         <FadeUp
           Children={
-            <div className="w-full flex items-center justify-centermax-2xl:px-10 max-md:px-6">
-              <img src={havardDec} className="w-xl h-full" />
+            <div className="w-full flex items-center justify-center max-2xl:px-10 max-md:px-6">
+              <img src={havardDec} className="w-2xl max-lg:w-xl h-full" />
             </div>
           }
         />
 
         <FadeUp
-          className="mt-[-40%] max-2xl:px-10 max-md:px-6"
+          className="mt-[-20%] max-xl:mt-[-40%] max-2xl:px-10 max-md:px-6"
           Children={
             <div className="flex flex-col gap-12 items-center justify-center py-12 max-md:py-4 max-md:gap-8">
               <h1 className="text-5xl font-bold max-md:text-4xl max-sm:text-3xl">
