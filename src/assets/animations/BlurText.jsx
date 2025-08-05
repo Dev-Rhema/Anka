@@ -16,7 +16,7 @@ const buildKeyframes = (from, steps) => {
 
 const BlurText = ({
   text = "",
-  delay = 400,
+  delay = delay / 1000,
   className = "",
   animateBy = "words",
   direction = "bottom",
@@ -28,7 +28,7 @@ const BlurText = ({
   onAnimationComplete = () => {},
   stepDuration = 0.35,
 }) => {
-  const elements = animateBy === "words" ? text.split(" ") : text.split("");
+  const elements = [text];
   const [inView, setInView] = useState(false);
   const ref = useRef(null);
 
@@ -78,38 +78,22 @@ const BlurText = ({
   );
 
   return (
-    <p
-      ref={ref}
-      className={className}
-      style={{ display: "flex", flexWrap: "wrap" }}
-    >
-      {elements.map((segment, index) => {
-        const animateKeyframes = buildKeyframes(fromSnapshot, toSnapshots);
-
-        const spanTransition = {
+    <p ref={ref} className={className}>
+      <motion.span
+        className="inline-block will-change-[transform,filter,opacity]"
+        initial={fromSnapshot}
+        animate={
+          inView ? buildKeyframes(fromSnapshot, toSnapshots) : fromSnapshot
+        }
+        transition={{
           duration: totalDuration,
           times,
-          delay: (index * delay) / 1000,
-        };
-        spanTransition.ease = easing;
-
-        return (
-          <motion.span
-            className="inline-block will-change-[transform,filter,opacity]"
-            key={index}
-            initial={fromSnapshot}
-            animate={inView ? animateKeyframes : fromSnapshot}
-            transition={spanTransition}
-            onAnimationComplete={
-              index === elements.length - 1 ? onAnimationComplete : undefined
-            }
-            whileInView={{ animateKeyframes }}
-          >
-            {segment === " " ? "\u00A0" : segment}
-            {animateBy === "words" && index < elements.length - 1 && "\u00A0"}
-          </motion.span>
-        );
-      })}
+          ease: easing,
+        }}
+        onAnimationComplete={onAnimationComplete}
+      >
+        {text}
+      </motion.span>
     </p>
   );
 };
